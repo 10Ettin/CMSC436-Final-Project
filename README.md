@@ -36,7 +36,7 @@ look nice and clean, user friendly, intuitive (how to use it).
   - Every interval, an obstacle object will randomly be placed on one of the three tracks (random number generator?)
   - Obstacles can move down the track snapping to a fixed set of y-coordinates (essentially the entire environment can be represented as a grid such as a 3x10 grid)
   - When the game state updates and an obstacle object is the same (x,y) coordinate as the player’s icon, a “hit” is registered which either ends the game or subtracts a “life”.
-    - When this happens, vibrate the phone using the Vibrator class, link for confirmation that this counts as "meaningful use ... [of] ... hardware (gps, accelerometer, ..) from the phone".
+    - When this happens, vibrate the phone using the [Vibrator](https://developer.android.com/reference/android/os/Vibrator) class, [link](https://piazza.com/class/mf8rge02pc51zf/post/161) for confirmation that this counts as "meaningful use ... [of] ... hardware (gps, accelerometer, ..) from the phone".
 * Based on the amount of time elapsed from the GameTimer, the frequency of obstacle objects generated will increase (maybe GameTimer_VALUE x multiplier = n, create an obstacle object every n intervals)
 * Score will be calculated by either elapsed time or obstacles dodged
 * When a player loses all of their “lives”, the GameTimer stops and the score is locally stored and sent to the Game Over View screen
