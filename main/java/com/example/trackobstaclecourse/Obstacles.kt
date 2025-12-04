@@ -46,14 +46,15 @@ class Obstacles {
         player.lives = lives
     }
 
-    fun destroyObsticle (itemToRM : Obstacle) {
+    fun destroyObstacle (itemToRM : Obstacle) {
         obstacles.remove(itemToRM)
     }
 
-    fun createObsticle () {
+    fun createObstacle () {
         obstacles.add(Obstacle((0..2).random(), (height / 8)))
     }
 
     
 
 }
+
