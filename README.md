@@ -91,10 +91,9 @@ A 3-track obstacle course Android game built with Kotlin for CMSC436.
 
 ### Running the Project
 1. Open Android Studio
-2. **File → Open** → Select `CMSC436-Final-Project` folder
-3. Click "Use Embedded JDK" if prompted
-4. Wait for Gradle sync to complete
-5. Click **▶ Run** or press `Shift + F10`
+2. Remove the .git file and open the project 
+3. Wait for Gradle sync to complete
+4. Click **▶ Run** or press `Shift + F10`
 
 ### Firebase Setup (Optional - for Leaderboard)
 1. Go to [Firebase Console](https://console.firebase.google.com/)
@@ -167,4 +166,5 @@ CMSC436 Final Project - Fall 2024
 ## 📄 License
 
 This project is for educational purposes as part of CMSC436 coursework.
+
 
