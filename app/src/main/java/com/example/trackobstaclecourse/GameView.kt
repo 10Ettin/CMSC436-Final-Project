@@ -7,6 +7,7 @@ import android.graphics.Paint
 import android.graphics.RectF
 import android.os.Handler
 import android.os.Looper
+import android.util.TypedValue
 import android.view.View
 import kotlin.random.Random
 
@@ -46,33 +47,47 @@ class GameView(context: Context) : View(context) {
 
     // Paints
     private val trackPaint = Paint().apply {
-        color = Color.parseColor("#00F5FF")
+        val typedValue = TypedValue()
+        context.theme.resolveAttribute(R.attr.cyan_u, typedValue, true)
+        color = typedValue.data
         alpha = 60
         strokeWidth = 4f
         style = Paint.Style.STROKE
     }
 
     private val playerPaint = Paint().apply {
-        color = Color.parseColor("#00F5FF")
+        val typedValue = TypedValue()
+        context.theme.resolveAttribute(R.attr.cyan_u, typedValue, true)
+
+        color = typedValue.data
         style = Paint.Style.FILL
         isAntiAlias = true
     }
 
     private val playerGlowPaint = Paint().apply {
-        color = Color.parseColor("#00F5FF")
+        val typedValue = TypedValue()
+        context.theme.resolveAttribute(R.attr.cyan_u, typedValue, true)
+
+        color = typedValue.data
         alpha = 100
         style = Paint.Style.FILL
         isAntiAlias = true
     }
 
     private val obstaclePaint = Paint().apply {
-        color = Color.parseColor("#FF1493")
+        val typedValue = TypedValue()
+        context.theme.resolveAttribute(R.attr.pink_u, typedValue, true)
+
+        color = typedValue.data
         style = Paint.Style.FILL
         isAntiAlias = true
     }
 
     private val obstacleGlowPaint = Paint().apply {
-        color = Color.parseColor("#FF1493")
+        val typedValue = TypedValue()
+        context.theme.resolveAttribute(R.attr.pink_u, typedValue, true)
+
+        color = typedValue.data
         alpha = 100
         style = Paint.Style.FILL
         isAntiAlias = true
