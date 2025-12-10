@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="background_dark_u" format="color"/>
+    <attr name="background_darker_u" format="color"/>
+
+    <attr name="black_u" format="color"/>
+    <attr name="white_u" format="color"/>
+    <attr name="cyan_u" format="color"/>
+    <attr name="pink_u" format="color"/>
+    <attr name="purple_u" format="color"/>
+    <attr name="yellow_u" format="color"/>
+    <attr name="green_u" format="color"/>
+    <attr name="orange_u" format="color"/>
+
+    <attr name="text_primary_u" format="color"/>
+    <attr name="text_secondary_u" format="color"/>
+
+    <attr name="track_line_u" format="color"/>
+    <attr name="player_color_u" format="color"/>
+    <attr name="obstacle_color_u" format="color"/>
+    <attr name="heart_color_u" format="color"/>
+
+    <attr name="button_primary_u" format="color"/>
+    <attr name="button_secondary_u" format="color"/>
+    <attr name="progress_bar_u" format="color"/>
+
+</resources>
