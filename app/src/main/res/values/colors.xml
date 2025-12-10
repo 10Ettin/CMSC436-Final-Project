@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <!-- Base Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    
+
+    <!-- Neon -->
     <!-- Neon Theme Colors -->
     <color name="background_dark">#0D0D1A</color>
     <color name="background_darker">#080810</color>
@@ -28,4 +30,60 @@
     <color name="button_primary">#00F5FF</color>
     <color name="button_secondary">#9B30FF</color>
     <color name="progress_bar">#39FF14</color>
+
+
+
+    <!-- Retro -->
+    <color name="retro_background_dark">#774320</color>
+    <color name="retro_background_darker">#764838</color>
+    <color name="retro_neon_cyan">#68C7C1</color>
+    <color name="retro_neon_pink">#F37D59</color>
+    <color name="retro_neon_purple">#EC00F0</color>
+    <color name="retro_neon_yellow">#FFC107</color>
+    <color name="retro_neon_green">#31CC5D</color>
+    <color name="retro_neon_orange">#F35F0F</color>
+
+    <!-- Text Colors -->
+    <color name="retro_text_primary">#FFFFFF</color>
+    <color name="retro_text_secondary">#B0B0C0</color>
+
+    <!-- Game Elements -->
+    <color name="retro_track_line">#68C7C1</color>
+    <color name="retro_player_color">#68C7C1</color>
+    <color name="retro_obstacle_color">#F37D59</color>
+    <color name="retro_heart_color">#F37D59</color>
+
+    <!-- UI Elements -->
+    <color name="retro_button_primary">#68C7C1</color>
+    <color name="retro_button_secondary">#EC00F0</color>
+    <color name="retro_progress_bar">#31CC5D</color>
+
+
+    <!-- Minimal -->
+
+    <!-- Minimal Theme Colors -->
+    <color name="minimal_background_dark">#37465B</color>
+    <color name="minimal_background_darker">#112838</color>
+    <color name="minimal_neon_cyan">#47B39B</color>
+    <color name="minimal_neon_pink">#B05F6D</color>
+    <color name="minimal_neon_purple">#462446</color>
+    <color name="minimal_neon_yellow">#FFC153</color>
+    <color name="minimal_neon_green">#205647</color>
+    <color name="minimal_neon_orange">#EB6B56</color>
+
+    <!-- Text Colors -->
+    <color name="minimal_text_primary">#FFFFFF</color>
+    <color name="minimal_text_secondary">#B0B0C0</color>
+
+    <!-- Game Elements -->
+    <color name="minimal_track_line">#47B39B</color>
+    <color name="minimal_player_color">#47B39B</color>
+    <color name="minimal_obstacle_color">#B05F6D</color>
+    <color name="minimal_heart_color">#B05F6D</color>
+
+    <!-- UI Elements -->
+    <color name="minimal_button_primary">#47B39B</color>
+    <color name="minimal_button_secondary">#462446</color>
+    <color name="minimal_progress_bar">#205647</color>
+
 </resources>
