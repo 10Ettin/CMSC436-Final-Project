@@ -17,8 +17,15 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var highScoreText: TextView
+    companion object {
+        var currentTheme = R.style.Base_Theme_TrackObstacleCourse
+    }
+
+    private var activeTheme = MainActivity.currentTheme
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(currentTheme)
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -59,6 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         preferencesButton.setOnClickListener {
             val intent = Intent(this, PreferencesActivity::class.java)
+            intent.putExtra("CURRENT_THEME", currentTheme)
             startActivity(intent)
         }
 
@@ -81,6 +89,10 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         // Update high score when returning from game
         updateHighScoreDisplay()
+        if (activeTheme != currentTheme) {
+            // If they are different, it means the user changed settings!
+            recreate() // Restart this screen to apply the new colors
+        }
     }
 
     private fun updateHighScoreDisplay() {
